@@ -13,6 +13,18 @@
         android:theme="@style/Theme.ProyectoFinalGrupo4_v21Fin"
         tools:targetApi="31">
         <activity
+            android:name=".SoporteClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComentTiendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComentTiendaActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ComentariosActivity2"
+            android:exported="false" />
+        <activity
             android:name=".ComentariosActivity"
             android:exported="false" />
         <activity
