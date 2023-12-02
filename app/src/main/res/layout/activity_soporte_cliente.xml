@@ -15,7 +15,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="8dp"
-        android:text="Centro de Ayuda"
+        android:text="Centro de Ayud"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/faqsListView"

@@ -11,7 +11,7 @@ import com.google.firebase.database.core.view.View
 
 class SoporteClienteActivity : AppCompatActivity() {
 
-    var faqs = arrayOf(
+    val faqs = arrayOf(
         "¿Cómo restablecer mi contraseña?",
         "¿Cómo actualizar mi información de perfil?",
         "¿Cómo realizar un pedido?",
@@ -24,10 +24,10 @@ class SoporteClienteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_soporte_cliente)
-        val faqsListView: ListView = findViewById<ListView>(R.id.faqsListView) as ListView
+        var faqsListView: ListView = findViewById<ListView>(R.id.faqsListView) as ListView
 
         // Configurar adaptador para la lista de preguntas frecuentes
-        val adaptador: Any? = ArrayAdapter<Any?>(this, android.R.layout.simple_list_item_1, faqs)
+        var adaptador: Any? = ArrayAdapter<Any?>(this, android.R.layout.simple_list_item_1, faqs)
         faqsListView.adapter = adaptador as ListAdapter?
 
         faqsListView.setOnItemClickListener{parent, view, position, id ->
@@ -38,7 +38,7 @@ class SoporteClienteActivity : AppCompatActivity() {
             ).show()
         }
 
-        val contactSupportButton = findViewById<Button>(R.id.contactSupportButton)
+        var contactSupportButton = findViewById<Button>(R.id.contactSupportButton)
         contactSupportButton.setOnClickListener {
             showToast("Abrir formulario de contacto con soporte")
         }
