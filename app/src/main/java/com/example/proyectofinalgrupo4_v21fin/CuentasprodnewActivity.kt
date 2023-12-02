@@ -3,6 +3,7 @@ package com.example.proyectofinalgrupo4_v21fin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 
 class CuentasprodnewActivity : AppCompatActivity() {
@@ -12,5 +13,6 @@ class CuentasprodnewActivity : AppCompatActivity() {
 
         val btnBack: Button = findViewById(R.id.btnBackCPN)
         val imgProd: ImageView = findViewById(R.id.imageView4)
+        val txtNameProd: EditText = findViewById(R.id.ProdName)
     }
 }
