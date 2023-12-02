@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnBackCPN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -33,7 +33,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/Name"
+                android:id="@+id/ProdName"
                 android:layout_width="315dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
