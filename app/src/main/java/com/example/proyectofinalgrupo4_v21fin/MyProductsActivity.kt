@@ -6,8 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MyProductsActivity : AppCompatActivity() {
 
-    RecyclerView: rcv ;
-    
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
