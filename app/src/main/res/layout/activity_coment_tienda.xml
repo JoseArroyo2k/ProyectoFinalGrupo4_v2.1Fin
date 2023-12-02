@@ -2,14 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/CajaComentario"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FFEB3B"
-    tools:context=".ComentariosActivity">
+    tools:context=".ComentTiendaActivity">
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgTambo"
         android:layout_width="246dp"
         android:layout_height="238dp"
         android:layout_marginStart="80dp"
@@ -18,58 +16,54 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cocazero" />
+        app:srcCompat="@drawable/tambo" />
+
+    <ImageView
+        android:id="@+id/imgComentTambo"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgTambo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logofinal" />
 
     <TextView
-        android:id="@+id/textCocaZero"
+        android:id="@+id/txtTambo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:text="Coca Cola Zero"
+        android:text="Tambo +"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imgTambo" />
 
     <TextView
-        android:id="@+id/textCExperiencia"
+        android:id="@+id/txtExperienTambo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="1dp"
         android:text="Cuentanos tu experiencia"
         android:textColor="#787878"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCocaZero" />
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="331dp" />
 
     <TextView
-        android:id="@+id/textPregunta"
+        android:id="@+id/txtPreguntaTambo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
-        android:text="¿Qué te parecio el producto?"
+        android:text="¿Qué te parecio la atención?"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCExperiencia" />
-
-    <TextView
-        android:id="@+id/textOpinion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="200dp"
-        android:text="Dejanos tu opinión"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPregunta" />
+        app:layout_constraintTop_toBottomOf="@+id/txtExperienTambo" />
 
     <RatingBar
-        android:id="@+id/ratingBar"
+        android:id="@+id/ratingBar4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -79,23 +73,36 @@
         android:progressTint="#FFEB3B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPregunta" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPreguntaTambo" />
 
     <TextView
-        android:id="@+id/textCantidad"
+        android:id="@+id/txtOpinionTambo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="200dp"
+        android:text="Dejanos tu opinión"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar4" />
+
+    <TextView
+        android:id="@+id/txtCantidadTambo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="32dp"
         android:text="0/255"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textOpinion"
-        app:layout_constraintTop_toBottomOf="@+id/textPregunta" />
+        app:layout_constraintStart_toEndOf="@+id/txtOpinionTambo"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar4" />
 
     <EditText
-        android:id="@+id/CuadroComent1"
+        android:id="@+id/CuadroComentTambo"
         android:layout_width="347dp"
         android:layout_height="170dp"
         android:layout_marginStart="32dp"
@@ -105,32 +112,19 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCantidad" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidadTambo" />
 
     <Button
-        android:id="@+id/buttonSend"
+        android:id="@+id/btnSendTambo"
         android:layout_width="273dp"
-        android:layout_height="63dp"
+        android:layout_height="0dp"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="696dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="128dp"
         android:backgroundTint="#E91E63"
-        android:text=" Enviar Reseña"
+        android:text="Enviar Reseña"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imgComen1"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="350dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logofinal" />
-
+        app:layout_constraintTop_toBottomOf="@+id/CuadroComentTambo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

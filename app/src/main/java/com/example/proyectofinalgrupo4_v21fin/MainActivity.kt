@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val txtCorreo: EditText = findViewById(R.id.txtUsuario)
         val txtClave: EditText = findViewById(R.id.txtClave)
 
-        val btnRegProveedor: Button = findViewById(R.id.btnRegistroProveedor)
+        val btnRegProveedor: Button = findViewById(R.id.btnRegistroProveedor2)
 
         btnReg.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
